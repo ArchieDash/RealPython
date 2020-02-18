@@ -4,7 +4,7 @@ class Greeter:
         
     def __enter__(self):  # execution before the function call
         print(f"Hello {self.name}")
-        return self
+        return self  # __enter__ method should return the object to handle
     
     def __exit__(self, exc_type, exc_value, exc_tb):  # execution after the function call
         print(f"See you later, {self.name}")
