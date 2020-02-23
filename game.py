@@ -8,9 +8,9 @@ RADIUS = 150
 
 arcade.open_window(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE)
 arcade.set_background_color(arcade.color.WHITE)
-arcade.start_render()
+arcade.start_render()  # game draw loop
 arcade.draw_circle_filled(
     SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, RADIUS, arcade.color.BLUE
     )
-arcade.finish_render()
+arcade.finish_render() # game draw loop
 arcade.run()
